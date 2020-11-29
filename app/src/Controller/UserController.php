@@ -11,6 +11,7 @@ use App\Entity\User;
 use App\Form\RegisterType;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
 
+
 class UserController extends AbstractController
 {
 
@@ -21,7 +22,7 @@ class UserController extends AbstractController
 
         $form->handleRequest($request);
 
-        if($form->isSubmitted()){
+        if($form->isSubmitted() && $form->isValid()){
             $user->setRole('user');
             $user->setCreatedAt(new \Datetime('now'));
             $user->setUpdatedAt(new \Datetime('now'));
