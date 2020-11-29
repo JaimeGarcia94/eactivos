@@ -8,7 +8,7 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
 use App\Entity\User;
-use App\form\RegisterType;
+use App\Form\RegisterType;
 
 class UserController extends AbstractController
 {
