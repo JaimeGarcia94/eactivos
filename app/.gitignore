@@ -30,3 +30,8 @@ yarn-error.log
 .idea/vcs.xml
 .idea/punchline.iml
 .idea/jsLibraryMappings.xml
+mysql/auto.cnf
+mysql/ib_buffer_pool
+mysql/ib_logfile0
+mysql/ibdata1
+mysql/ibtmp1
