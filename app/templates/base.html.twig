@@ -3,9 +3,21 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" type="text/css">
+            <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        {% endblock %}
     </head>
     <body>
+        {% block header %}
+            <div>
+                <ul>
+                    <li><a href="{{ path('auctions') }}">Inicio</a></li>
+                    <li><a href="{{ path('login') }}">Login</a></li>
+                    <li><a href="{{ path('register') }}">Registro</a></li>
+                </ul>
+            </div>
+        {% endblock %}
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
