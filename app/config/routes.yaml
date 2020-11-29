@@ -1,3 +1,7 @@
-#index:
-#    path: /
-#    controller: App\Controller\DefaultController::index
+auctions:
+    path: /auctions
+    controller: App\Controller\AuctionController::index
+
+register:
+    path: /register
+    controller: App\Controller\UserController::register
