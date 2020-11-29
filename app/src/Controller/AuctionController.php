@@ -10,18 +10,18 @@ use Symfony\Component\Routing\Annotation\Route;
 class AuctionController extends AbstractController
 {
 
-    public function index(): Response
+    public function index()
     {
         // prueba de entidades
-        $em = $this->getDoctrine()->getManager();
-        $auction_repo = $this->getDoctrine()->getRepository(Auction::class);
-        $auctions = $auction_repo->findAll();
+//        $em = $this->getDoctrine()->getManager();
+//        $auction_repo = $this->getDoctrine()->getRepository(Auction::class);
+//        $auctions = $auction_repo->findAll();
+//
+//        foreach ($auctions as $auction){
+//            echo $auction->getUser()->getEmail().':'.$auction->getTitle();
+//        }
 
-        foreach ($auctions as $auction){
-            echo $auction->getUser()->getEmail().':'.$auction->getTitle();
-        }
-
-        return $this->render('auction/register.html.twig', [
+        return $this->render('auction/index.html.twig', [
             'controller_name' => 'AuctionController',
         ]);
     }
