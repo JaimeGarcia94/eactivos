@@ -1,20 +1,65 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello AuctionController!{% endblock %}
+{% block title %}Todas las subastas{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <h1 class="title">Todas las subastas</h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/var/www/project/src/Controller/AuctionController.php'|file_link(0) }}">src/Controller/AuctionController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/var/www/project/templates/auction/register.html.twig'|file_link(0) }}">templates/auction/index.html.twig</a></code></li>
-    </ul>
+            <div class="row">
+{#                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">#}
+{#                    {% for auction in auctions %}#}
+{#                    <div class="container-card-panel" style="border: 1px solid black;">#}
+{#                        <img src="{{ image_path }}" class="panel-auction-image" alt="image-product">#}
+{#                        <div class="col-12">#}
+{#                            <span>{{ auction.title}}</span>#}
+{#                        </div>#}
+{#                        <div class="col-12">#}
+{#                            <span>{{ auction.category}}</span>#}
+{#                        </div>#}
+{#                        <div class="col-12">#}
+{#                            <span>{{ auction.price}}</span><span>€</span>#}
+{#                        </div>#}
+{#                        <div class="col-12">#}
+{#                            <span>{{ auction.location}}</span>#}
+{#                        </div>#}
+{#                        <div class="col-12">#}
+{#                            <a href="#" type="button" class="btn btn-block btn-flat btn-primary">Pujar</a>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                    {% endfor %}#}
+{#                </div>#}
+
+                <div class="card-group">
+                    {% for auction in auctions %}
+                    <div class="card">
+                        <img class="card-img-top" src="{{ image_path }}" alt="Card image cap">
+                        <div class="card-body">
+                            <div class="col-12">
+                                <span>{{ auction.title}}</span>
+                            </div>
+                            <div class="col-12">
+                                <span>{{ auction.category}}</span>
+                            </div>
+                            <div class="col-12">
+                                <span>{{ auction.price}}</span><span>€</span>
+                            </div>
+                            <div class="col-12">
+                                <span>{{ auction.location}}</span>
+                            </div>
+                            <div class="col-12">
+                                <a href="#" type="button" class="btn btn-block btn-flat btn-primary">Pujar</a>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+            </div>
+
+        </div>
+    </div>
+
 </div>
 {% endblock %}
