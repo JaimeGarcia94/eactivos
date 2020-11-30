@@ -10,29 +10,6 @@
             <h1 class="title">Todas las subastas</h1>
 
             <div class="row">
-{#                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">#}
-{#                    {% for auction in auctions %}#}
-{#                    <div class="container-card-panel" style="border: 1px solid black;">#}
-{#                        <img src="{{ image_path }}" class="panel-auction-image" alt="image-product">#}
-{#                        <div class="col-12">#}
-{#                            <span>{{ auction.title}}</span>#}
-{#                        </div>#}
-{#                        <div class="col-12">#}
-{#                            <span>{{ auction.category}}</span>#}
-{#                        </div>#}
-{#                        <div class="col-12">#}
-{#                            <span>{{ auction.price}}</span><span>€</span>#}
-{#                        </div>#}
-{#                        <div class="col-12">#}
-{#                            <span>{{ auction.location}}</span>#}
-{#                        </div>#}
-{#                        <div class="col-12">#}
-{#                            <a href="#" type="button" class="btn btn-block btn-flat btn-primary">Pujar</a>#}
-{#                        </div>#}
-{#                    </div>#}
-{#                    {% endfor %}#}
-{#                </div>#}
-
                 <div class="card-group">
                     {% for auction in auctions %}
                     <div class="card">
@@ -51,7 +28,7 @@
                                 <span>{{ auction.location}}</span>
                             </div>
                             <div class="col-12">
-                                <a href="#" type="button" class="btn btn-block btn-flat btn-primary">Pujar</a>
+                                <a href="{{ path('auction_detail', {'id':auction.id}) }}" type="button" class="btn btn-block btn-flat btn-primary">Pujar</a>
                             </div>
                         </div>
                     </div>

@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Detalle del artículo{% endblock %}
+
+{% block body %}
+
+<div class="container">
+    <h2>{{ auction.title }}</h2>
+    <p>
+        {{ auction.content }}
+    </p>
+</div>
+{% endblock %}

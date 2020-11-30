@@ -10,20 +10,24 @@
     </head>
     <body>
         {% block header %}
-            <div>
-                <ul>
-                    {% if app.user %}
-                        <li><a href="{{ path('auctions') }}">Inicio</a></li>
-                        <li><a href="">{{ app.user.name ~ ' ' ~ app.user.surname}}</a></li>
-                        <li><a href="{{ path('logout') }}">Cerrar sesión</a></li>
-                    {% else %}
-                        <li><a href="{{ path('login') }}">Login</a></li>
-                        <li><a href="{{ path('register') }}">Registro</a></li>
-                    {% endif %}
+            <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+                <div class="container">
+                    <ul>
+                        {% if app.user %}
+                            <li><a href="{{ path('auctions') }}" class="navbar-brand">Inicio</a></li>
+                            <li><a href="{{ path('auction_create') }}" class="navbar-brand">Crear subasta</a></li>
+                            <li><a href="#" class="navbar-brand">{{ app.user.name ~ ' ' ~ app.user.surname}}</a></li>
+                            <li><a href="{{ path('logout') }}" class="navbar-brand">Cerrar sesión</a></li>
+                        {% else %}
+                            <li><a href="{{ path('login') }}" class="navbar-brand">Login</a></li>
+                            <li><a href="{{ path('register') }}" class="navbar-brand">Registro</a></li>
+                        {% endif %}
 
 
-                </ul>
-            </div>
+                    </ul>
+                </div>
+            </nav>
+
         {% endblock %}
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}

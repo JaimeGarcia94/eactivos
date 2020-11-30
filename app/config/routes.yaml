@@ -2,6 +2,14 @@ auctions:
     path: /auctions
     controller: App\Controller\AuctionController::index
 
+auction_detail:
+    path: /auction/{id}
+    controller: App\Controller\AuctionController::detail
+
+auction_create:
+    path: /create-auction
+    controller: App\Controller\AuctionController::create
+
 register:
     path: /register
     controller: App\Controller\UserController::register
