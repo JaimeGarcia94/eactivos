@@ -9,9 +9,9 @@ body{
     font-size: 1.5em;
 }
 
-.panel-auction-image{
+.detail-image{
     width: 100%;
-    height: auto;
+    height: 600px;
 }
 
 #register div{

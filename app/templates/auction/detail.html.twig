@@ -1,37 +1,44 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Detalle del artículo{% endblock %}
+{% block title %}Detalle del producto{% endblock %}
 
 {% block body %}
 
 <div class="container">
     <div class="row">
-        <div class="col-8" style="border: 1px solid black;">
-            <div class="card-group">
-                <div class="card">
-                    <img class="card-img-top" src="{{ image_path }}" alt="Card image cap">
-                    <div class="card-body">
-                        <div class="col-12">
-                            <span>{{ auction.title}}</span>
-                        </div>
-                        <div class="col-12">
-                            <span>{{ auction.category}}</span>
-                        </div>
-                        <div class="col-12">
-                            <span>{{ auction.location}}</span>
-                        </div>
-                    </div>
-                </div>
+        <div class="col-8">
+            <div class="col-12">
+                <h2>{{ auction.title}}</h2>
+            </div>
+            <img class="detail-image" src="{{ image_path }}" alt="Card image cap">
+
+            <div class="col-12">
+                <span>{{ auction.content}}</span>
+            </div>
+            <div class="col-12">
+                <span>{{ auction.location}}</span>
             </div>
         </div>
-        <div class="col-4" style="border: 1px solid red">
-            <h3>Listado de pujas</h3>
+        <div class="col-4">
+            <h3 class="text-center">Listado de pujas</h3>
+            <div class="col-12 text-center" id="info-auction">
+                <span>{{'Tu puja actual es de: ' ~ auction.price ~ ' € '}}</span>
+            </div>
             <div class="col-12">
-                <span>{{'Puja actual: ' ~ auction.price ~ ' € '}}</span>
+                <button class="btn btn-block btn-flat btn-danger" onclick="deletePrice()">Eliminar</button>
             </div>
         </div>
     </div>
-
-
 </div>
+
+    {% block javascripts %}
+        <script>
+            function deletePrice() {
+                var price = document.getElementById("info-auction");
+                price.remove();
+                window.history.back();
+            }
+        </script>
+    {% endblock %}
+
 {% endblock %}
