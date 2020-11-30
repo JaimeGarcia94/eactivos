@@ -65,4 +65,11 @@ class AuctionController extends AbstractController
             'form' => $form->createView()
         ]);
     }
+
+    public function edit(Request $request, Auction $auction)
+    {
+        return $this->render('auction/create.html.twig', [
+            'edit' => true
+        ]);
+    }
 }

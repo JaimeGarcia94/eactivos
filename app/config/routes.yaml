@@ -10,6 +10,10 @@ auction_create:
     path: /create-auction
     controller: App\Controller\AuctionController::create
 
+auction_edit:
+    path: /edit-auction/{id}
+    controller: App\Controller\AuctionController::edit
+
 register:
     path: /register
     controller: App\Controller\UserController::register
