@@ -33,7 +33,7 @@ class AuctionController extends AbstractController
     public function detail(Auction $auction)
     {
         if(!$auction){
-            return $this->redirectToRoute('auction');
+            return $this->redirectToRoute('auctions');
         }
 
         return $this->render('auction/detail.html.twig', [
@@ -66,10 +66,49 @@ class AuctionController extends AbstractController
         ]);
     }
 
-    public function edit(Request $request, Auction $auction)
+    public function edit(Request $request, UserInterface $user, Auction $auction)
     {
+        if(!$user || $user->getId() != $auction->getUser()->getId()){
+            return $this->redirectToRoute('auctions');
+        }
+
+        $form = $this->createForm(AuctionType::class, $auction);
+
+        $form->handleRequest($request);
+
+        if($form->isSubmitted() && $form->isValid()){
+            $auction->setCreatedAt(new \Datetime('now'));
+            $auction->setUpdatedAt(new \Datetime('now'));
+            $auction->setUser($user);
+
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($auction);
+            $em->flush();
+
+            return $this->redirect($this->generateUrl('auction_detail', ['id' => $auction->getId()]));
+
+        }
+
         return $this->render('auction/create.html.twig', [
-            'edit' => true
+            'edit' => true,
+            'form' => $form->createView()
         ]);
+    }
+
+    public function delete(UserInterface $user, Auction $auction)
+    {
+        if(!$user || $user->getId() != $auction->getUser()->getId()){
+            return $this->redirectToRoute('auctions');
+        }
+
+        if(!$auction){
+            return $this->redirectToRoute('auctions');
+        }
+
+        $em = $this->getDoctrine()->getManager();
+        $em->remove($auction);
+        $em->flush();
+
+        return $this->redirectToRoute('auctions');
     }
 }

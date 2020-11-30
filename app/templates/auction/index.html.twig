@@ -28,11 +28,12 @@
                                 <span>{{ auction.location}}</span>
                             </div>
                             <div class="col-12">
-                                {% if app.user.role == 'user' %}
-                                    <a href="{{ path('auction_detail', {'id':auction.id}) }}" type="button" class="btn btn-block btn-flat btn-primary">Pujar</a>
-                                {% else %}
-                                    <a href="" type="button" class="btn btn-block btn-flat btn-primary">Editar</a>
-                                    <a href="" type="button" class="btn btn-block btn-flat btn-primary">Eliminar</a>
+
+                                <a href="{{ path('auction_detail', {'id':auction.id}) }}" type="button" class="btn btn-block btn-flat btn-primary">Pujar</a>
+
+                                {% if app.user != null and auction.user.id == app.user.id %}
+                                    <a href="{{ path('auction_edit', {'id':auction.id}) }}" type="button" class="btn btn-block btn-flat btn-primary">Editar</a>
+                                    <a href="{{ path('auction_delete', {'id':auction.id}) }}" type="button" class="btn btn-block btn-flat btn-primary">Eliminar</a>
                                 {% endif %}
                             </div>
                         </div>

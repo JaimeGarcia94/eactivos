@@ -33,7 +33,7 @@ class AuctionType extends AbstractType
             'label' => 'Imagen'
         ))
         ->add('submit', SubmitType::class, array(
-            'label' => 'Crear'
+            'label' => 'Guardar'
         ));
 
     }
