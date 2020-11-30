@@ -8,6 +8,18 @@
 /public/bundles/
 /var/
 /vendor/
+.idea/workspace.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/php.xml
+.idea/vcs.xml
+.idea/punchline.iml
+.idea/jsLibraryMappings.xml
+mysql/auto.cnf
+mysql/ib_buffer_pool
+mysql/ib_logfile0
+mysql/ibdata1
+mysql/ibtmp1
 ###< symfony/framework-bundle ###
 
 ###> symfony/phpunit-bridge ###
@@ -23,15 +35,3 @@ npm-debug.log
 yarn-error.log
 ###< symfony/webpack-encore-bundle ###
 
-.idea/workspace.xml
-.idea/misc.xml
-.idea/modules.xml
-.idea/php.xml
-.idea/vcs.xml
-.idea/punchline.iml
-.idea/jsLibraryMappings.xml
-mysql/auto.cnf
-mysql/ib_buffer_pool
-mysql/ib_logfile0
-mysql/ibdata1
-mysql/ibtmp1
