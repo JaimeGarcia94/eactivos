@@ -11,14 +11,19 @@
 {% endblock %}
 
 {% block body %}
-<h1>
-    {% if edit is defined%}
-        Editar subasta
-    {% else %}
-        Crear subasta
-    {% endif %}
-</h1>
+<div class="example-wrapper">
+
+    <h1>
+        {% if edit is defined%}
+            Editar subasta
+        {% else %}
+            Crear subasta
+        {% endif %}
+    </h1>
+
     {{ form_start(form) }}
     {{ form_widget(form) }}
     {{ form_end(form) }}
+</div>
+
 {% endblock %}

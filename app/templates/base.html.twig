@@ -10,23 +10,57 @@
     </head>
     <body>
         {% block header %}
+{#            <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">#}
+{#                <div class="container">#}
+{#                    <ul>#}
+{#                        {% if app.user %}#}
+{#                            <li><a href="{{ path('auctions') }}" class="navbar-brand">Inicio</a></li>#}
+{#                            <li><a href="{{ path('auction_create') }}" class="navbar-brand">Crear subasta</a></li>#}
+{#                            <li><a href="#" class="navbar-brand">{{ app.user.name ~ ' ' ~ app.user.surname}}</a></li>#}
+{#                            <li><a href="{{ path('logout') }}" class="navbar-brand">Cerrar sesión</a></li>#}
+{#                        {% else %}#}
+{#                            <li><a href="{{ path('login') }}" class="navbar-brand">Login</a></li>#}
+{#                            <li><a href="{{ path('register') }}" class="navbar-brand">Registro</a></li>#}
+{#                        {% endif %}#}
+
+
+{#                    </ul>#}
+{#                </div>#}
+{#            </nav>#}
+
+
+
             <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
                 <div class="container">
-                    <ul>
-                        {% if app.user %}
-                            <li><a href="{{ path('auctions') }}" class="navbar-brand">Inicio</a></li>
-                            <li><a href="{{ path('auction_create') }}" class="navbar-brand">Crear subasta</a></li>
-                            <li><a href="#" class="navbar-brand">{{ app.user.name ~ ' ' ~ app.user.surname}}</a></li>
-                            <li><a href="{{ path('logout') }}" class="navbar-brand">Cerrar sesión</a></li>
-                        {% else %}
-                            <li><a href="{{ path('login') }}" class="navbar-brand">Login</a></li>
-                            <li><a href="{{ path('register') }}" class="navbar-brand">Registro</a></li>
-                        {% endif %}
+{#                    <a class="navbar-brand" href="{{ url('/') }}">#}
+{#                        {{ config('app.name', 'Punchline') }}#}
+{#                    </a>#}
 
 
-                    </ul>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- Left Side Of Navbar -->
+                        <ul class="navbar-nav mr-auto">
+                            {% if app.user %}
+                                <li><a href="{{ path('auctions') }}" class="navbar-brand">Inicio</a></li>
+                                <li><a href="{{ path('auction_create') }}" class="navbar-brand">Crear subasta</a></li>
+                                <li><a href="#" class="navbar-brand">{{ app.user.name ~ ' ' ~ app.user.surname}}</a></li>
+                                <li><a href="{{ path('logout') }}" class="navbar-brand">Cerrar sesión</a></li>
+
+                        </ul>
+
+                        <!-- Right Side Of Navbar -->
+                        <ul class="navbar-nav ml-auto">
+                            <!-- Authentication Links -->
+                            {% else %}
+                                <li><a href="{{ path('login') }}" class="navbar-brand">Login</a></li>
+                                <li><a href="{{ path('register') }}" class="navbar-brand">Registro</a></li>
+                            {% endif %}
+                        </ul>
+                    </div>
                 </div>
             </nav>
+
+
 
         {% endblock %}
         {% block body %}{% endblock %}

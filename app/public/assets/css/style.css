@@ -9,3 +9,28 @@ body{
     width: 100%;
     height: auto;
 }
+
+#register div{
+    margin-bottom: 1rem;
+}
+
+#auction div{
+    margin-bottom: 1rem;
+}
+
+input[type="text"],
+textarea[required="required"],
+input[type="email"],
+input[type="password"]{
+    display: block;
+    width: 80%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
