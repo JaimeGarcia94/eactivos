@@ -36,8 +36,17 @@ class AuctionController extends AbstractController
             return $this->redirectToRoute('auctions');
         }
 
+        $em = $this->getDoctrine()->getManager();
+        $auction_repo = $this->getDoctrine()->getRepository(Auction::class);
+        $auctions = $auction_repo->findAll();
+
+        foreach ($auctions as $image){
+            $image_path = $image->getImagePath();
+        }
+
         return $this->render('auction/detail.html.twig', [
-            'auction' => $auction
+            'auction' => $auction,
+            'image_path' => $image_path,
         ]);
     }
 

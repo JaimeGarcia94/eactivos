@@ -22,7 +22,7 @@
                                 <span>{{ auction.category}}</span>
                             </div>
                             <div class="col-12">
-                                <span>{{ auction.price}}</span><span>€</span>
+                                <span>{{ auction.price ~ ' € '  }}</span>
                             </div>
                             <div class="col-12">
                                 <span>{{ auction.location}}</span>
@@ -40,7 +40,6 @@
                     </div>
                     {% endfor %}
             </div>
-
         </div>
     </div>
 
