@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="cc65a69f-603a-41ef-91da-5b0fba52d331" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/app/public/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/public/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/Controller/AuctionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/Controller/AuctionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/auction/create.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/auction/create.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/templates/auction/detail.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/auction/detail.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/auction/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/auction/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/user/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/user/login.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/templates/user/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/app/templates/user/register.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,17 +27,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/base.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="29" column="96" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="96" />
+            <state relative-caret-position="272">
+              <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/auction/detail.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+            <state relative-caret-position="442">
+              <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -40,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/user/login.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
+            <state relative-caret-position="85">
+              <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -49,17 +54,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/config/packages/security.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
+            <state relative-caret-position="408">
+              <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/public/assets/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/public/assets/css/style.css">
+        <entry file="file://$PROJECT_DIR$/app/templates/user/register.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="41" selection-start-line="41" selection-end-line="41" selection-end-column="7" />
+            <state relative-caret-position="85">
+              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -67,8 +81,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/Controller/AuctionController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-290">
-              <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+            <state relative-caret-position="101">
+              <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/auction/create.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -76,8 +99,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/auction/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="35" column="148" selection-start-line="35" selection-start-column="115" selection-end-line="35" selection-end-column="148" />
+            <state relative-caret-position="459">
+              <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -112,20 +135,20 @@
         <option value="$PROJECT_DIR$/app/src/Entity/Auction.php" />
         <option value="$PROJECT_DIR$/app/src/form/RegisterType.php" />
         <option value="$PROJECT_DIR$/app/src/Entity/User.php" />
-        <option value="$PROJECT_DIR$/app/templates/user/register.html.twig" />
         <option value="$PROJECT_DIR$/app/src/Controller/UserController.php" />
         <option value="$PROJECT_DIR$/app/.gitignore" />
         <option value="$PROJECT_DIR$/app/src/Form/RegisterType.php" />
         <option value="$PROJECT_DIR$/app/src/Form/AuctionType.php" />
         <option value="$PROJECT_DIR$/app/config/routes.yaml" />
         <option value="$PROJECT_DIR$/app/config/packages/security.yaml" />
-        <option value="$PROJECT_DIR$/app/templates/auction/create.html.twig" />
-        <option value="$PROJECT_DIR$/app/templates/user/login.html.twig" />
         <option value="$PROJECT_DIR$/app/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/app/src/Controller/AuctionController.php" />
-        <option value="$PROJECT_DIR$/app/templates/auction/index.html.twig" />
-        <option value="$PROJECT_DIR$/app/public/assets/css/style.css" />
         <option value="$PROJECT_DIR$/app/templates/auction/detail.html.twig" />
+        <option value="$PROJECT_DIR$/app/templates/auction/index.html.twig" />
+        <option value="$PROJECT_DIR$/app/templates/user/login.html.twig" />
+        <option value="$PROJECT_DIR$/app/templates/user/register.html.twig" />
+        <option value="$PROJECT_DIR$/app/templates/auction/create.html.twig" />
+        <option value="$PROJECT_DIR$/app/public/assets/css/style.css" />
       </list>
     </option>
   </component>
@@ -358,16 +381,15 @@
       <workItem from="1606641947087" duration="3249000" />
       <workItem from="1606668023738" duration="3266000" />
       <workItem from="1606727512751" duration="13353000" />
-      <workItem from="1606741493683" duration="21057000" />
+      <workItem from="1606741493683" duration="23279000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56436000" />
+    <option name="totallyTimeSpent" value="58658000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="96" y="27" width="1797" height="1037" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22101656" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -474,27 +496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/packages/security.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/user/register.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/auction/create.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/Form/RegisterType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
@@ -515,13 +516,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/user/login.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="54" selection-start-line="27" selection-start-column="54" selection-end-line="27" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/Entity/Auction.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -529,38 +523,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/base.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/config/packages/security.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="29" column="96" selection-start-line="29" selection-start-column="58" selection-end-line="29" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/public/assets/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="41" selection-start-line="41" selection-end-line="41" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/auction/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="35" column="148" selection-start-line="35" selection-start-column="115" selection-end-line="35" selection-end-column="148" />
+        <state relative-caret-position="408">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/Controller/AuctionController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-290">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+        <state relative-caret-position="101">
+          <caret line="7" column="25" selection-start-line="7" selection-start-column="25" selection-end-line="7" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/auction/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/user/login.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/user/register.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/auction/detail.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="31" selection-start-line="37" selection-start-column="31" selection-end-line="37" selection-end-column="31" />
+        <state relative-caret-position="442">
+          <caret line="26" column="33" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/auction/create.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="9" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/public/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
         </state>
       </provider>
     </entry>
