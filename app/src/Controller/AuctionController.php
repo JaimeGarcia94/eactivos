@@ -8,7 +8,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use App\Form\AuctionType;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Security\Core\User\UserInterface as UserInterface;
 
 class AuctionController extends AbstractController
 {
@@ -51,8 +51,14 @@ class AuctionController extends AbstractController
         if($form->isSubmitted() && $form->isValid()){
             $auction->setCreatedAt(new \Datetime('now'));
             $auction->setUpdatedAt(new \Datetime('now'));
+            $auction->setUser($user);
 
-            var_dump($user);
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($auction);
+            $em->flush();
+
+            return $this->redirect($this->generateUrl('auction_detail', ['id' => $auction->getId()]));
+
         }
 
         return $this->render('auction/create.html.twig', [
