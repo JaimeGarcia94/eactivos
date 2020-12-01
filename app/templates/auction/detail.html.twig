@@ -20,6 +20,7 @@
                 </span>
             </div>
         </div>
+        {% if app.user.role == 'user' %}
         <div class="col-4">
             <h3 class="text-center">Listado de pujas</h3>
             <div class="col-12 text-center" id="info-auction">
@@ -29,6 +30,7 @@
                 <button class="btn btn-block btn-flat btn-danger" onclick="deletePrice()">Eliminar</button>
             </div>
         </div>
+        {% endif %}
     </div>
 </div>
     {% block javascripts %}
