@@ -11,7 +11,7 @@
                 <div class="card-group">
                     {% for auction in auctions %}
                     <div class="card">
-                        <img class="card-img-top" src="{{ image_path }}" alt="Card image cap">
+                        <img class="card-img-top" src="{{ auction.imagePath }}" alt="Card image cap">
                         <div class="card-body">
                             <div class="col-12">
                                 <span>{{ auction.title}}</span>
