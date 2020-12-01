@@ -11,10 +11,10 @@
                 <div class="card-group">
                     {% for auction in auctions %}
                     <div class="card">
-                        <img class="card-img-top" src="{{ auction.imagePath }}" alt="Card image cap">
+                        <img class="card-img-top auction-image" src="{{ auction.imagePath }}" alt="image product">
                         <div class="card-body">
                             <div class="col-12">
-                                <span>{{ auction.title}}</span>
+                                <span style="font-weight: bold">{{ auction.title}}</span>
                             </div>
                             <div class="col-12">
                                 <span>{{ auction.category}}</span>
@@ -23,7 +23,9 @@
                                 <span>{{ auction.price ~ ' € '  }}</span>
                             </div>
                             <div class="col-12">
-                                <span>{{ auction.location}}</span>
+                                <span>
+                                    <i class="fa fa-map-marker" aria-hidden="true">{{ auction.location}}</i>
+                                </span>
                             </div>
                             <div class="col-12 mt-2">
                                 {% if app.user.role == 'user' %}
