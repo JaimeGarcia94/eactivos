@@ -26,9 +26,9 @@
                                 <span>{{ auction.location}}</span>
                             </div>
                             <div class="col-12 mt-2">
-                                {% if app.user.role == 'ROLE_USER' %}
+                                {% if app.user.role == 'user' %}
                                     <a href="{{ path('auction_detail', {'id':auction.id}) }}" type="button" class="btn btn-block btn-flat btn-success">Pujar</a>
-                                {% elseif app.user.role == 'ROLE_ADMIN' and app.user != null and auction.user.id == app.user.id %}
+                                {% elseif app.user.role == 'admin' and app.user != null and auction.user.id == app.user.id %}
                                     <a href="{{ path('auction_edit', {'id':auction.id}) }}" type="button" class="btn btn-block btn-flat btn-warning">Editar</a>
                                     <a href="{{ path('auction_delete', {'id':auction.id}) }}" type="button" class="btn btn-block btn-flat btn-danger">Eliminar</a>
                                 {% endif %}
